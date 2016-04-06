@@ -1,6 +1,10 @@
-This is an implmentation of Robert "RSnake" Hansen's
-SlowLoris attack tool (http://ha.ckers.org/slowloris/) using
+This is an implentation by RootSecks of Robert "RSnake" Hansen's
+SlowLoris attack tool (bit.ly/1R6TKDO) using
 multiple tor proxies locally to obfuscate the attacker.
 
-Please don't actually use this. It was created as a learning exercise 
-and I'm leaving the source up here for posterity. 
+I have made a minor and rather crude modification to restrict
+the use of this to onion only addresses.
+
+Mitigation notes for Apache server admins:
+1/ Install reqTimeout mod to mitigate this attack
+2/ Since this is an Onion ( therefore localhost/127.0.0.1 ) only attack variant, do not use ModQoS or any other IP based module
