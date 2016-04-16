@@ -73,7 +73,7 @@ if ( ( length $server == 22 ) && ( substr($server, 16, 6) eq ".onion" ) ) {
 }
 
 #Randomize the first proxy to use for testing :)
-my $firstrandomnumber = int( rand(10));
+my $firstrandomnumber = int( rand(9));
 
 #Create connection to test delay
 print "Trying random Tor port: " . $proxyportnums[$firstrandomnumber] . " (if fail, try again).\r\n";
