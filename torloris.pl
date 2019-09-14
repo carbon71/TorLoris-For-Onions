@@ -138,10 +138,10 @@ if ( my $sock = IO::Socket::Socks->new(ProxyAddr => $proxyaddress[$firstrandomnu
 } else {
 	
 	#no it doesn't work
-	$doesitwork = 0;
+	$doesitwork = 1;
 	
 	#lol
-	print "FAILED\r\n";
+	print "FAILED try anyway\r\n";
 	
 }
 
