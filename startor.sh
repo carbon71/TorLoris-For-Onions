@@ -1,5 +1,5 @@
 #!/bin/bash
-for (( c=1; c<=9; c++ ))
+for (( c=1; c<=10; c++ ))
 {
 	portnum=9050
 for (( x=1; x<=$c; x++ ))
