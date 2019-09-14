@@ -63,9 +63,9 @@ GetOptions('add=s' => \$add) or die "Usage: $0 --add address";
 	my $socktimeout = 5; #Timeout value for the socks socket
 	my $doesitwork; #Variable to a working/notworking thing
 	my @timervalues = ( "2", "2", "2", "2", "2"); #Various values to be used when making connectons
-	my @proxyaddress = ( "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1" ); #The address of the proxy. 
-	my @proxyportnums = ( "9051", "9052", "9053", "9054", "9055", "9056", "9057", "9058", "9059");
-	my @socksver = ( "5", "5", "5", "5", "5", "5", "5", "5", "5" ); #Socks Version
+	my @proxyaddress = ( "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1", "127.0.0.1" ); #The address of the proxy. 
+	my @proxyportnums = ( "9051", "9052", "9053", "9054", "9055", "9056", "9057", "9058", "9059", "9060");
+	my @socksver = ( "5", "5", "5", "5", "5", "5", "5", "5", "5", "5" ); #Socks Version
 # End of server info and port info.
 
 # Make Torloris an onion attacker only!
